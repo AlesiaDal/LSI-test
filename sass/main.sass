@@ -1,0 +1,215 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+@import "../libs/bootstrap-sass/assets/stylesheets/bootstrap"
+@import url('https://fonts.googleapis.com/css?family=Open+Sans')
+
+
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid 
+  border: 1px solid red
+  background: #ffd9d9
+
+body input:required:valid,
+body textarea:required:valid 
+  color: #000
+a
+	list-style-type: none
+
+html, body
+	height: 100%
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.75
+	font-family: 'Open Sans', sans-serif;
+	overflow-x: hidden
+	opacity: 1
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+.top-line
+	background-color: #dcdcdc
+	padding:
+		top: 20px
+		bottom: 50px
+	.left-block
+		float: left
+		.logo
+			width: 100px
+			float: left
+		.slogan
+			width: 500px
+			float: left
+			.h2
+				margin: 0
+				font-weight: 700
+				color: $accent
+				font-size: 36px
+				padding: 0 15px 15px
+
+			.h3
+				margin: 0
+				font-weight: 700
+				font-style: italic
+				color: $accent
+				font-size: 24px
+				padding: 0 15px 15px
+	.contacts
+		float: right
+		font-weight: 300
+		color: $accent
+		font-size: 40px
+.navbar	
+	background: $accent
+	text-align: center
+	display: block
+	margin: 0 auto !important
+
+	.nav
+		list-style-type: none
+		margin-left: 200px
+		li
+			float: left
+			padding: 20px 15px
+			a
+				color: #fff
+				font-size: 30px
+				border-right: 1px #fff solid
+				padding: 0 20px
+				&:hover
+					text-decoration: underline
+			.last
+				border-right: none
+
+.nav>li>a:focus, 
+.nav>li>a:hover 
+	background: none
+			
+.carousel-inner>.item>a>img, .carousel-inner>.item>img
+	background-size: cover
+	width: 100%
+	height: auto	
+.content
+	margin-top: 20px
+	margin-bottom: 190px
+	.sidebar
+		background: #777
+		color: #fff
+		padding-bottom: 50px
+		.h3
+			font-size: 40px
+			font-style: italic
+			font-weight: 400
+			text-align: center
+			padding-top: 20px
+			text-transform: uppercase
+		.news
+			padding: 0 30px 30px
+			.posts	
+				margin-top: 25px
+				.h4	
+					font-size: 14px
+					text-align: left
+					text-transform: uppercase
+					padding-top: 15px
+				a
+					color: #fff
+					font-size: 14px
+			.blog
+				float: right
+				a
+					text-align: right
+					color: #fff
+.main-content
+	.h2
+		font-size: 40px
+		color: $accent
+	p
+		font-size: 14px
+		color: $accent
+		line-height: 22px
+		text-align: justify
+footer
+	background-color: #777
+	.container
+		padding-top: 40px
+		color: #fff
+		ul
+			list-style-type: none
+			a
+				color: #fff
+		.button
+			color: #fff
+			padding: 10px 150px
+			background: #f47e00
+			border: 2px #a15300 solid
+			font-size: 30px
+			line-height: 28px
+
+			&:hover
+				background: #c78c4e
+				transition: 0.2 easy
+				text-decoration: none
+.modal-content
+	background: #006e90
+	width: 510px
+	height: 450px
+	.modal-header
+		border-bottom: none
+		.close
+			color: #fff
+	
+
+	form
+		padding: 0 40px
+
+		.form-group
+			margin: 10px
+			width: 100%
+			
+		.form-control
+			color: #000
+			font-size: 24px
+			line-height: 28px
+			font-weight: 400
+			height: 50px
+			border-radius: 0
+		.form-control.btn
+			display: inline
+			padding: 5px 60px
+			border-radius: 0
+			background: #f47e00
+			color: #fff
+			font-size: 30px 
+			&:hover
+				background: #c78c4e
+				transition: 0.2 easy
+	
+
+
+
+
+@import "media" // Всегда в конце
